@@ -1,0 +1,107 @@
+#memberlogintitle{
+  width: 100%;
+  margin-top: 50px;
+}
+#memberlogintitle>img{
+  width: 100%;
+
+}
+#memberlogin{
+  margin: auto;
+  margin-top: 20px;
+}
+.loginbtn{
+
+  /*text-align: center;*/
+}
+.loginbtn>button{
+  width: 200px;
+}
+/*.tour{
+  display: none;
+}*/
+.tour_category{
+  display: none;
+}
+.loginbtn{
+  text-align: center;
+}
+.checkbox>.AddMember{
+  margin-left: 5px;
+  text-align: right;
+}
+.checkbox{
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*/////////////////////////////////////////*/
+/*/////////////////////////////////////////*/
+/*/////////////////////////////////////////*/
+/*              PC                      */
+/*/////////////////////////////////////////*/
+/*/////////////////////////////////////////*/
+/*/////////////////////////////////////////*/
+
+@media screen and (min-width: 980px){.
+.content>#contentLeft{
+
+}
+#contentLeft{
+  width: 20%;
+  height: 300px;
+  float: left;
+  background-color: rgb(130, 47, 166);
+}
+#memberlogintitle{
+  width: 30%;
+  margin: auto;
+  margin-top: 80px;
+}
+.col-sm-10>.inputpwidth{
+  width: 50%;
+}
+#memberlogin{
+  width: 70%;
+  margin: auto;
+}
+.formwidth{
+  margin: 0px;
+  padding: 0px;
+  margin-left: 120px;
+  margin-top: 50px;
+}
+.checkbox>.AddMember{
+  margin-left: 5px;
+}
+.tour_category{
+  display: block;
+}
+.tour_list{
+  display: none;
+}
+.col-sm-offset-2 {
+  margin-left: 0px;
+}
+.loginbtn{
+  margin-left: none;
+}
+}

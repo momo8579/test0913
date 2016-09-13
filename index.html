@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/jquery-3.1.0.min.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/fonts/font-awesome.css">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mobile GO SHOP</title>
+</head>
+
+
+<script>
+
+
+//###############Icon點擊展開nav###################///
+$(function(){
+$('#Icon').click(function(){
+$('#nav').slideToggle();
+});//.icon.click end
+//###############Icon點擊展開nav###################///
+
+
+//###############新聞圖片###################///
+$('.Newstitle a').hover(function(){
+  // 把 #show-image 的 src 改成被移到的超連結的位置
+  // $('.showimg').attr('src', $(this).attr('href'));
+
+  $('.showimg').attr('src',$(this).attr('value'));
+
+})
+
+
+
+
+
+
+
+
+
+//###############新聞圖片###################///
+
+//###############topicom回頂端###################///
+  $('#topicon').hide();
+
+$(window).scroll(function(){
+  if($(this).scrollTop()>100){ //當window的scrolltop距離大於1，
+    $('#topicon').show();
+  }else{
+    $('#topicon').fadeOut();
+  };//if else end
+
+
+  if($(this).scrollTop()>1200){
+    // alert('ooo');
+     $('#topicon').css("bottom","200px");
+   }else{
+     $('#topicon').css("bottom","20px");
+   };
+
+
+}); //window.scrool end
+
+//###############topicom回頂端###################///
+
+
+
+});//documentready end
+
+
+
+
+
+
+</script>
+
+
+
+<body>
+<header id="header">
+  <div id="tool">
+      <div id="Member"><a class="DB" href="#"><i class="fa fa-user fa-2x" aria-hidden="true"></i><span class="ttext">會員登入</span></a></div>
+      <div id="AddMember"><a class="DB" href="#"><i class="fa fa-user-plus fa-2x" aria-hidden="true"></i><span class="ttext">加入會員</a></div>
+      <div id="CI">
+        <div id="MyCart"><a class="DB" href="#"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i><span class="ttext">購物車</span></a></div>
+        <div id="Icon"><a class="DB" href="#"><span class=""><i class="fa fa-bars fa-2x" aria-hidden="true"></i></span></a></div>
+      </div>
+
+
+  </div>
+  <div class="content">
+
+  <h1 id="logo"><a href="#" class="DB"><img src="img/logo.jpg" alt=""></a></h1>
+  <div id="logoR">
+    <h2 id="title"><a href="#">MOBILE GO SHOP</a></h2>
+    <h2 class="SrOnly">主導覽</h2>
+    <nav id="nav">
+      <ul>
+        <li><a href="#">最新消息</a></li>
+        <li><a href="#">手機總攬</a></li>
+        <li><a href="#">手機周邊</a></li>
+        <li><a href="#">會員專區</a></li>
+        <li><a href="#">關於我們</a></li>
+      </ul>
+    </nav>
+
+  </div>
+  <!-- logoL -->
+  </div>
+</header>
+<div id="banner">
+  <div class="content">
+  <!-- <div id="bannerleft"></div> -->
+  <div id="bannercontent">
+    <img src="uploads/2.jpg" alt="">
+  </div>
+  <!-- <div id="bannerright"></div> -->
+  </div>
+</div>
+<div id="news">
+  <div class="content">
+    <h2>最新消息</h2>
+
+    <!-- 最新消息下方線 -->
+    <hr class="line">
+    <div class="img"><img  class="showimg"src="uploads/news/news_iphone7.jpg" alt=""></div>
+    <!-- 新聞 -->
+    <div class="NewsContent NewsMTOP">
+      <p class="NewsDate">2016/08/30</p>
+      <p class="Newstitle"><a href="#" value="uploads/news/news_iphone7.jpg">iPhone7 9/7號即將開賣補字數到第二行第三行第三行</a></p>
+    </div>
+    <!-- 新聞 -->
+
+    <!-- 新聞 -->
+    <div class="NewsContent NewsMTOP">
+      <p class="NewsDate">2016/08/30</p>
+      <p class="Newstitle"><a href="#" value="uploads/news/news_2.jpg">iPhone7 9/7號即將開賣補字數到第二行第三行第三行</a></p>
+    </div>
+    <!-- 新聞 -->
+
+    <!-- 新聞 -->
+    <div class="NewsContent NewsMTOP">
+      <p class="NewsDate">2016/08/30</p>
+      <p class="Newstitle"><a href="#" value="uploads/news/news_3.jpg">iPhone7 9/7號即將開賣補字數到</a></p>
+    </div>
+    <!-- 新聞 -->
+
+    <!-- 新聞 -->
+    <div class="NewsContent NewsMTOP">
+      <p class="NewsDate">2016/08/30</p>
+      <p class="Newstitle"><a href="#">iPhone7 9/7號即將開賣補字數到第二行</a></p>
+    </div>
+    <!-- 新聞 -->
+
+
+  </div>
+  <!-- 最新消息下方線 -->
+  <hr class="line">
+  <!-- NewsDIV END -->
+</div>
+    <!-- NewsDIV END -->
+
+
+
+<div id="phone">
+  <div class="content">
+    <h2>熱門手機</h2>
+    <!-- 產品 -->
+    <div class="PCcontent">
+    <div class="PCimg"><img src="uploads/phone/phone_xperiaMU.jpg" alt=""></div>
+    <div class="tiptag"><img src="img/icon/hot.png" alt=""></div>
+    <p class="PCtitle">Sony Xperia X Performance 64GB</p>
+    <p class="PCPrice"><span class="NT">NT$</span>23.000</p>
+    </div>
+    <!-- 產品 -->
+
+    <!-- 產品 -->
+    <div class="PCcontent">
+    <div class="PCimg"><img src="uploads/3.jpg" alt=""></div>
+    <p class="PCtitle">SAMSUNG Galaxy Tab S2 8.0 Wi-Fi T713 64GB</p>
+    <p class="PCPrice"><span class="NT">NT$</span>39.300</p>
+    </div>
+    <!-- 產品 -->
+
+    <!-- 產品 -->
+    <div class="PCcontent">
+    <div class="PCimg"><img src="uploads/phone/phone_zf.jpg" alt=""></div>
+    <p class="PCtitle">Asus Zenfone 3 64GB</p>
+    <p class="PCPrice"><span class="NT">NT$</span>22.000</p>
+    </div>
+    <!-- 產品 -->
+
+    <!-- 產品 -->
+    <div class="PCcontent">
+    <div class="PCimg"><img src="uploads/phone/phone_htc10.jpg" alt=""></div>
+    <p class="PCtitle">Sony Xperia X Performance 64GB</p>
+    <p class="PCPrice"><span class="NT">NT$</span>8.300</p>
+    </div>
+    <!-- 產品 -->
+  </div>
+
+</div>
+<div id="other">
+  <div class="content">
+    <h2>熱門周邊</h2>
+    <!-- 產品 -->
+    <div class="PCcontent">
+    <div class="PCimg"><img src="uploads/other/other_hear.jpg" alt=""></div>
+    <p class="PCtitle">Sony Xperia X Performance 64GB</p>
+    <p class="PCPrice"><span class="NT">NT$</span>8.300</p>
+    </div>
+    <!-- 產品 -->
+
+    <!-- 產品 -->
+    <div class="PCcontent">
+    <div class="PCimg"><img src="uploads/other/other_pro.jpg" alt=""></div>
+    <div class="tiptag"><img src="img/icon/hot.png" alt=""></div>
+    <p class="PCtitle">Sony Xperia X Performance 64GB</p>
+    <p class="PCPrice"><span class="NT">NT$</span>8.300</p>
+    </div>
+    <!-- 產品 -->
+
+    <!-- 產品 -->
+    <div class="PCcontent">
+    <div class="PCimg"><img src="uploads/other/other_pro.jpg" alt=""></div>
+    <p class="PCtitle">Sony Xperia X Performance 64GB</p>
+    <p class="PCPrice"><span class="NT">NT$</span>8.300</p>
+    </div>
+    <!-- 產品 -->
+
+    <!-- 產品 -->
+    <div class="PCcontent">
+    <div class="PCimg"><img src="uploads/other/other_pro.jpg" alt=""></div>
+    <p class="PCtitle">Sony Xperia X Performance 64GB</p>
+    <p class="PCPrice"><span class="NT">NT$</span>8.300</p>
+    </div>
+    <!-- 產品 -->
+
+
+
+  </div>
+</div>
+  <div id="topicon"><a href="#"><i class="fa fa-caret-up fa-2x" aria-hidden="true"></i></a></div>
+<footer id="footer">
+  <div id="footerlogo"><img src="img/logonoback.png" alt=""></div>
+  <h2>MOBILE GO  SHOP</h2>
+  <div id="footerlink">
+    <ul>
+      <li><a href="#">聯絡我們</a></li>
+      <li><a href="#">會員條款</a></li>
+      <li><a href="#">購物須知</a></li>
+      <li><a href="#">隱私權聲明</a></li>
+    </ul>
+  </div>
+  <div id="footercc"><p>© 2010-2016 MGS馬烏比 版權所有</<p></div>
+
+
+  <!-- <div class="content">footer</div> -->
+</footer>
+</body>
+</html>
